@@ -2,6 +2,17 @@
 <html>
   <head>
     <title>table</title>
+    <style>
+      table {
+        border: 1px solid black;
+        width: 500px;
+      }
+      th,
+      td,
+      tr {
+        border: 1px solid black;
+      }
+    </style>
   </head>
   <body>
     <table border="1">
@@ -32,20 +43,74 @@
     <hr />
     <hr />
     <table border="1">
+      <tr>
+        <th>Name</th>
+        <th rowspan="2">Age</th>
+        <th>Phone Number</th>
+      </tr>
+      <tr>
+        <td>sewar</td>
+        <td>07102921208</td>
+      </tr>
+      <tr>
+        <td>mariam</td>
+        <td>22</td>
+        <td>982374982367</td>
+      </tr>
+    </table>
+
+    <hr />
+    <hr />
+    <hr />
+    <hr />
+
+    <table border="1">
+      <tr>
+        <th>Name</th>
+        <th>Age</th>
+        <th>Phone Number</th>
+      </tr>
+      <tr>
+        <td>sewar</td>
+        <td colspan="2">22/097</td>
+      </tr>
+      <tr>
+        <td>mariam</td>
+        <td colspan="2">23 /098</td>
+      </tr>
+    </table>
+
+    <hr />
+    <hr />
+    <hr />
+    <hr />
+
+    <table>
+      <thead>
         <tr>
-          <th>Name</th>
-          <th rowspan="2">Age</th>
-          <th>Phone Number</th>
+          <th colspan="2">name</th>
+          <th rowspan="2">age</th>
+          <th rowspan="2">phone</th>
+          <th colspan="2">compnay</th>
         </tr>
+        <tr>
+          <th>first</th>
+          <th>last</th>
+
+          <th>job</th>
+          <th>salary</th>
+        </tr>
+      </thead>
+      <tbody>
         <tr>
           <td>sewar</td>
-          <td>07102921208</td>
+          <td>jihad</td>
+          <td>23</td>
+          <td>9879879870</td>
+          <td>developer</td>
+          <td>323</td>
         </tr>
-        <tr>
-          <td>mariam</td>
-          <td>22</td>
-          <td>982374982367</td>
-        </tr>
+      </tbody>
     </table>
   </body>
 </html>
