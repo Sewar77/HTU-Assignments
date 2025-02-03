@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>forms</title>
+    <style>
+      label {
+        font-size: 25px;
+        font-weight: bold;
+      }
+      input {
+        font-size: 15px;
+        width: 200px;
+        height: 35px;
+      }
+    </style>
+  </head>
+  <body>
+    <form>
+      <label for="firstname"> First Name </label><br>
+      <input type="text" required id="firstname" name="firstname" maxlength="16"/><br><br>
+
+      <label for="secondname"> Second Name </label><br>
+      <input type="text" id="secondname" name="secondname" maxlength="16"/><br><br>
+
+      <label for="familyname"> Family Name </label><br>
+      <input type="text" required id="familyname" name="familyname" maxlength="16"/><br><br>
+
+      <label for="birthdate"> Date of Birth </label><br>
+      <input type="date" required id="birthdate" name="birthdate" max="2025-02-03"/><br><br>
+
+      <label for="age"> Age </label><br>
+      <input type="number" id="age" name="age"/><br><br>
+
+      <label for="email"> Your Email </label><br>
+      <input type="email" required id="email" name="email"/><br><br>
+
+      <label for="password"> Password </label><br>
+      <input type="password" required id="password" name="password"  minlength="8"/><br><br>
+      
+      <input type="submit" value="Create User">
+    </form>
+  </body>
+</html>
