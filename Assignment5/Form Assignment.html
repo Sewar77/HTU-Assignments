@@ -7,37 +7,139 @@
         font-size: 25px;
         font-weight: bold;
       }
-      input {
-        font-size: 15px;
-        width: 200px;
-        height: 35px;
-      }
     </style>
   </head>
   <body>
     <form>
-      <label for="firstname"> First Name </label><br>
-      <input type="text" required id="firstname" name="firstname" maxlength="16"/><br><br>
+      <label for="firstname"> First Name </label><br />
+      <input
+        type="text"
+        required
+        id="firstname"
+        name="firstname"
+        maxlength="16"
+      /><br /><br />
 
-      <label for="secondname"> Second Name </label><br>
-      <input type="text" id="secondname" name="secondname" maxlength="16"/><br><br>
+      <label for="secondname"> Second Name </label><br />
+      <input
+        type="text"
+        id="secondname"
+        name="secondname"
+        maxlength="16"
+      /><br /><br />
 
-      <label for="familyname"> Family Name </label><br>
-      <input type="text" required id="familyname" name="familyname" maxlength="16"/><br><br>
+      <label for="familyname"> Family Name </label><br />
+      <input
+        type="text"
+        required
+        id="familyname"
+        name="familyname"
+        maxlength="16"
+      /><br /><br />
 
-      <label for="birthdate"> Date of Birth </label><br>
-      <input type="date" required id="birthdate" name="birthdate" max="2025-02-03"/><br><br>
+      <label for="birthdate"> Date of Birth </label><br />
+      <input
+        type="date"
+        required
+        id="birthdate"
+        name="birthdate"
+        max="2025-02-03"
+      /><br /><br />
 
-      <label for="age"> Age </label><br>
-      <input type="number" id="age" name="age"/><br><br>
+      <label for="age"> Age </label><br />
+      <input type="number" id="age" name="age" /><br /><br />
 
-      <label for="email"> Your Email </label><br>
-      <input type="email" required id="email" name="email"/><br><br>
+      <label for="email"> Your Email </label><br />
+      <input type="email" required id="email" name="email" /><br /><br />
 
-      <label for="password"> Password </label><br>
-      <input type="password" required id="password" name="password"  minlength="8"/><br><br>
+      <label for="password"> Password </label><br />
+      <input
+        type="password"
+        required
+        id="password"
+        name="password"
+        minlength="8"
+      /><br /><br />
+
+      <label for="gender"> Gender </label><br />
+      <input
+        type="radio"
+        required
+        id="gender"
+        name="gender"
+        value="female"
+        checked
+      />Female<br /><br />
+      <input
+        type="radio"
+        required
+        id="gender"
+        name="gender"
+        value="male"
+      />Male<br /><br />
+
+      <label for="skills">Skills</label><br />
+      <input
+        type="checkbox"
+        id="skills"
+        name="skills"
+        value="python"
+        checked
+      />Python<br />
+      <input type="checkbox" id="skills" name="skills" value="c++" />C++<br />
+      <input
+        type="checkbox"
+        id="skills"
+        name="skills"
+        checked
+        value="html"
+      />html<br />
+      <input type="checkbox" id="skills" name="skills" value="java" />Java<br />
+      <input type="checkbox" id="skills" name="skills" value="css" />CSS<br />
+      <input
+        type="checkbox"
+        id="skills"
+        name="skills"
+        value="js"
+      />JavaScript<br />
+      <input type="checkbox" id="skills" name="skills" value="c#" />C#<br />
+      <br />
+      Country:<br />
+ <!--       <select name="country" id="country">
+        <option value="jo">Jordan</option>
+        <option value="eg">Egypt</option>
+        <option value="usa">america</option>
+        <option value="ksa">saudi arabia</option>
+        <option value="kw">kwait</option>
+        <option value="leb">lebanon</option>
+      </select>
+      <br />
+      <br />
+
+      Courses:<br />
+    <select name="courses" id="courses" multiple>
+        <option value="jo">Jordan</option>
+        <option value="eg">Egypt</option>
+        <option value="usa">america</option>
+        <option value="ksa">saudi arabia</option>
+        <option value="kw">kwait</option>
+        <option value="leb">lebanon</option>
+      </select>--> 
+      <br />
+      <br />
+<input type="text" list="country" name="country">
+      <datalist id="country" >
+        <option value="jo">Jordan</option>
+        <option value="eg">Egypt</option>
+        <option value="usa">america</option>
+        <option value="ksa">saudi arabia</option>
+        <option value="kw">kwait</option>
+        <option value="leb">lebanon</option>
+      </datalist>
+      <br />
+      <br />
       
-      <input type="submit" value="Create User">
+      <input type="submit" value="Create User" />
     </form>
   </body>
 </html>
