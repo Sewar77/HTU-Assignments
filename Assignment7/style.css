@@ -27,3 +27,16 @@ width: 80%;
     text-align: center;
 }
 
+.text{
+    font-size: 25px;
+}
+._color{
+    color: blue;
+}
+
+.imagebackground{
+    background-image: url("/Images/image.jpeg");
+    width: 80%;
+    text-align: center;
+
+}
