@@ -40,3 +40,9 @@ width: 80%;
     text-align: center;
 
 }
+
+.imagebackground1{
+    background-image: url("/Images/image.jpeg");
+    width: 80%;
+    background-repeat: no-repeat;
+}
