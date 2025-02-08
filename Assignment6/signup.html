@@ -3,11 +3,15 @@
   <head>
     <title>sign up</title>
     <style>
+        body{
+            background-color: red;
+        }
       form {
         padding: 20px;
         border: 1px solid red;
         width: fit-content;
         margin-left: 30%;
+        background-color: white;
       }
       label {
         padding: 20px;
@@ -15,6 +19,14 @@
         margin: -10px;
         text-align: left;
         margin-bottom: 30px;
+      }
+      form h1{
+        text-align: center;
+        color: #000;
+      }
+      h1{
+        text-align: center;
+        color: white;
       }
       input {
         width: 400px;
@@ -24,6 +36,8 @@
     </style>
   </head>
   <body>
+    <h1>Welcomme to HTU</h1>
+
     <form>
       <h1>Sign In</h1>
       <label for="fname">First Name</label><br />
@@ -47,9 +61,6 @@
         id="confirmpassword"
         name="confirmpassword"
       />
-      <br />
-      <label for="fname">First Name</label><br />
-      <input type="text" id="fname" name="firstname" />
       <br />
       <input type="button" value="Create User" />
       <br />
