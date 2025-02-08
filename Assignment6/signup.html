@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>sign up</title>
+    <style>
+        body{
+            background-color: red;
+        }
+      form {
+        padding: 20px;
+        border: 1px solid red;
+        width: fit-content;
+        margin-left: 30%;
+        background-color: white;
+      }
+      label {
+        padding: 20px;
+        font-size: 20px;
+        margin: -10px;
+        text-align: left;
+        margin-bottom: 30px;
+      }
+      form h1{
+        text-align: center;
+        color: #000;
+      }
+      h1{
+        text-align: center;
+        color: white;
+      }
+      input {
+        width: 400px;
+        height: 30px;
+        margin: 20px;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>Welcomme to HTU</h1>
+
+    <form>
+      <h1>Sign In</h1>
+      <label for="fname">First Name</label><br />
+      <input type="text" id="fname" name="firstname" />
+      <br />
+      <label for="sname">Secong Name</label><br />
+      <input type="text" id="sname" name="secondname" />
+      <br />
+      <label for="lname">Last Name</label><br />
+      <input type="text" id="lname" name="lastname" />
+      <br />
+      <label for="email">Your Email:</label><br />
+      <input type="email" id="email" name="email" />
+      <br />
+      <label for="password">Password</label><br />
+      <input type="password" id="password" name="password" />
+      <br />
+      <label for="confirmpassword">Confirm Password</label><br />
+      <input
+        type="confirmpassword"
+        id="confirmpassword"
+        name="confirmpassword"
+      />
+      <br />
+      <input type="button" value="Create User" />
+      <br />
+        <a href="signin">
+            <input type="button" value="Have an account? "
+        /></a>
+    </form>
+  </body>
+</html>
