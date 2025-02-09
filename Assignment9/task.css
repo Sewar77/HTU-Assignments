@@ -1,21 +1,6 @@
 body{
     font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif 
 }
-.navbar{
-     height: 50px;
-    margin: 20px;
-    padding: 20px;
-    font-weight: bold;
-    text-align: center;
-    background-color: #eabdff;
-    font-size: 35px;
-    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif 
-}
-.navbar a{
-    padding: 40px;
-    text-decoration: none;
-    color: #845ec2;
-}
 
 .container{
     display: flex;
