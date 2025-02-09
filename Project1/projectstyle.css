@@ -23,7 +23,7 @@ body{
     flex-wrap:nowrap ;
 }
 #home{
-    text-align: center;
+    text-align: justify;
 }
 .bio{
     font-size: 15px;

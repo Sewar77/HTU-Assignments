@@ -1,0 +1,66 @@
+body{
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif 
+}
+
+.container{
+    display: flex;
+    justify-content: center;
+    flex-wrap:nowrap ;
+}
+#home{
+    text-align: center;
+}
+.bio{
+    font-size: 15px;
+    padding-left: 30px;
+    width: 50%;
+    text-align:right ;
+}
+
+.bio img{
+    border: 1px solid #845ec2;
+    width: 100%;
+     height: 100%;
+}
+
+
+.bio1{
+    font-size: 15px;
+    padding-left: 30px;
+    width: 90%;
+    text-align:right ;
+}
+
+.bio2{
+    font-size: 15px;
+    padding-left: 30px;
+    width: 90%;
+    text-align:left ;
+}
+
+
+.bio3{
+    font-size: 15px;
+    padding-left: 30px;
+    width: 90%;
+    text-align:end ;
+}
+
+
+.bio4{
+    font-size: 15px;
+    padding-left: 30px;
+    width: 90%;
+    text-align:start ;
+}
+
+.bio5{
+    text-decoration: unset;
+    letter-spacing: 10px;
+    line-height: 40px;
+    white-space: wrap;
+}
+.shadow{
+    text-shadow: 10px 10px #845ec2;
+}
+
