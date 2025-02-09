@@ -4,7 +4,6 @@
 }
 
 .border2{
- 
 margin-top: 60px;
 }
 
@@ -18,4 +17,4 @@ p{
     box-sizing: border-box;
  /*   padding: 30px;  the distance between the element and the border of the element itself.  */
  /*   margin: 20px;   the distance between the element`s border and the outside border  */
-}
+} 
