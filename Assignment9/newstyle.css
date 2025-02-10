@@ -1,0 +1,31 @@
+*{
+    margin: 0px;
+    padding: 0px;
+}
+
+.divbox{
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: center;
+    padding: 20px;
+}
+.container{
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: center;
+    padding: 20px;
+}
+.leftbox{
+    width: 50%;
+}
+
+
+.rightbox{
+    width: 50%;
+}
+
+
+
+
+
+
