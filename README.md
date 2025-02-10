@@ -1,1 +1,1 @@
-"# HTU-Assignments" 
+Here is the assignments of all lectures. 

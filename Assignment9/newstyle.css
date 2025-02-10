@@ -59,3 +59,100 @@ header{
     border-radius: 20px;
 }
 
+.flex{
+    display: flex;
+    border: 1px solid red;
+height: 500px;
+padding: 20px;
+justify-content: center;
+flex-wrap: wrap;
+padding: 30px;
+}
+
+.childflex{
+    display: flex;
+    border: 1px solid red;
+    flex-wrap: nowrap;
+    gap: 30px;
+    width: 700px;
+    padding: 20px;
+    justify-content: center;
+
+    height: 100px;
+    flex-direction: row;
+
+}
+.child{
+    display: flex;
+    justify-content: center;
+
+    border: 1px solid red;
+    flex: 1;
+    gap: 20px;
+    flex-direction: row;
+}
+
+.child3{
+    display: flex;
+    border: 1px solid red;
+    justify-content: center;
+
+    flex: 4;
+    flex-direction: row;
+}
+.child4{
+    display: flex;
+    border: 1px solid red;
+    justify-content: center;
+    flex: 1;
+    padding: 10px;
+    gap: 20px;
+    justify-content: center;
+    flex-direction: column;   
+}
+
+.childof4{
+    border: 1px solid red;
+    flex-basis: 50px;
+    justify-content: center;
+    gap: 10px;
+}
+
+.child5{
+    display: flex;
+    border: 1px solid red;
+    justify-content: center;
+    flex: 1;
+    padding: 10px;
+    gap: 20px;
+    flex-direction: row;   
+}
+
+.childof5{
+    border: 1px solid red;
+    justify-content: center;
+
+    gap: 10px;
+    flex: 4;
+}
+
+
+
+.divflex{
+    display: flex;
+    border: 1px solid red;
+    flex-direction: row;
+    gap: 12px;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    padding: 16px;
+}
+
+.divflex div{
+    text-align: center;
+    height: 100px;
+    border: 1px solid red;
+    flex-basis: 150px; /* the less width possible can element take.  */
+    flex-shrink: unset;
+    flex: 2;
+}
