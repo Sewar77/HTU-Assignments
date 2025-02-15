@@ -1,0 +1,31 @@
+.leftchild{
+    border: 1px solid black;
+    padding: 20px;
+    height: 500px;
+    text-align: center;
+    border-radius: 20px;
+    width: 30%;
+}
+.parent{
+    max-width: 50%;
+    display: flex;
+    padding: 20px;
+    flex-wrap: nowrap;
+    justify-content: center;
+    justify-items: center;
+    gap: 20px;
+    align-items: center;
+}
+.rightchild{
+    border: 1px solid black;
+    padding: 20px;
+    width: 70%;
+    text-align: center;
+    height: 500px;
+    border-radius: 20px;
+
+}
+body{
+    display: flex;
+    justify-content: center;
+}
