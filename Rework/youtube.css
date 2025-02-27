@@ -1,0 +1,156 @@
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+}
+.left-header-side {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 10px;
+  align-items: center;
+  flex-direction: row;
+  padding: 20px;
+}
+.mid-header-side {
+  display: flex;
+  flex-wrap: nowrap;
+  justify-content: center;
+  gap: 10px;
+  align-items: center;
+  flex-direction: row;
+  padding: 20px;
+}
+.right-header-side {
+  display: flex;
+  flex-wrap: nowrap;
+  justify-content: center;
+  gap: 15px;
+  align-items: center;
+  flex-direction: row;
+  padding: 20px;
+}
+.header {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+  flex-direction: row;
+}
+.img {
+  width: 50px;
+  height: 50px;
+  border: 1px solid black;
+  border-radius: 50px;
+}
+.icon-youtube {
+  color: red;
+  font-size: 40px;
+}
+.icon {
+  padding: 12px;
+  background-color: #c6c6c6d5;
+  border-radius: 50px;
+  cursor: pointer;
+  font-size: 15px;
+  border: none;
+  text-align: center;
+}
+i span {
+  font-size: 10px;
+  font-weight: bold;
+  padding: 2px;
+  text-align: center;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+.input {
+  border: 2px solid #c6c6c6;
+  font-size: 15px;
+  width: 50%;
+  height: 35px;
+  padding: 5px;
+  border-radius: 30px;
+}
+.main {
+  display: flex;
+  flex-direction: row;
+  padding: 10px;
+  justify-content: space-between;
+  gap: 30px;
+}
+.sidebar {
+  display: flex;
+  flex-wrap: wrap;
+  max-width: 20%;
+  flex-direction: column;
+  text-align: center;
+  gap: 15px;
+  height: fit-content;
+  padding: 20px;
+}
+.sidebar-icons {
+  display: flex;
+  padding-left: 0px;
+  flex-direction: row;
+  gap: 10px;
+  text-align: center;
+  font-size: larger;
+}
+.address {
+  font-size: 25px;
+  text-align: left;
+}
+.sidebar-images {
+  display: flex;
+  padding-left: 0px;
+  flex-direction: row;
+  gap: 15px;
+  text-align: center;
+  font-size: larger;
+}
+.sidebar-images img {
+  width: 30px;
+  height: 30px;
+  border: none;
+}
+.bars {
+  display: flex;
+  gap: 20px;
+  color: red;
+  text-align: center;
+}
+.footer-sidebar {
+  text-align: left;
+  font-size: 13px;
+}
+.videos-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  height: auto;
+  width: 100%;
+  gap: 10px;
+}
+.video {
+  display: flex;
+  border-radius: 20px;
+  flex: 2;
+  width: fit-content;
+  flex-direction: column;
+  flex-basis: 150px;
+  height: auto;
+  width: auto;
+  border: 1px solid black;
+}
+.video-image img {
+  width: 300px;
+  padding: 5px;
+  border-radius: 20px;
+  height: 200px;
+}
+
+
+.video-details p{
+    font-size: 20px;
+    font-weight: bold;
+}
