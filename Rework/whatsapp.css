@@ -1,0 +1,238 @@
+* {
+  padding: 0px;
+  margin: 0px;
+  box-sizing: border-box;
+}
+main {
+  display: flex;
+  justify-content: center;
+  height: 100vh;
+  align-items: center;
+}
+.container {
+  border: 1px solid black;
+  display: flex;
+  justify-content: flex-start;
+  flex-direction: row;
+  align-items: center;
+  width: 90%;
+  height: 90%;
+}
+.navbar {
+  width: 30px;
+  border: 1px solid black;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.upper-side,
+.lower-side {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 5px;
+  gap: 10px;
+}
+.profile-image {
+  height: 30px;
+  width: 30px;
+  border-radius: 50px;
+  border: 1px solid black;
+}
+.icon {
+  font-size: 10px;
+}
+.chats-box {
+  display: flex;
+  width: 30%;
+  flex-direction: column;
+  padding: 5px;
+  border-right: 1px solid black;
+  height: 100%;
+  gap: 10px;
+}
+.chat-search {
+  display: flex;
+  gap: 10px;
+  max-width: 100%;
+  padding: 10px;
+  justify-content: space-between;
+  flex-direction: column;
+}
+.chat {
+  display: flex;
+  align-items: center;
+  width: 100%;
+  flex-wrap: wrap;
+  gap: 10px;
+  padding: 5px;
+  justify-content: space-between;
+}
+.chat span {
+  display: flex;
+  flex-direction: row;
+  gap: 10px;
+}
+.chats {
+  overflow: auto;
+}
+.search-2 {
+  width: 100%;
+  padding: 5px;
+  border-radius: 20px;
+}
+.chat-1 {
+  display: flex;
+  flex-direction: row;
+  gap: 2px;
+  padding: 5px;
+  justify-content: space-between;
+}
+.massege-details {
+  width: 100%;
+  padding: 5px;
+  display: flex;
+  gap: 10px;
+  border-radius: 10px;
+  flex-direction: column;
+  justify-content: center;
+}
+.name-hours {
+  width: 100%;
+  display: flex;
+  font-size: 1.3rem;
+  font-weight: bolder;
+  justify-content: space-between;
+  flex-direction: row;
+}
+.massege {
+  margin-left: 10px;
+  margin-right: 10px;
+  display: flex;
+  font-size: 1rem;
+  justify-content: space-between;
+  flex-direction: row;
+  align-items: center;
+}
+@media (max-width: 400px) {
+  .name-hours {
+    font-size: 0.5em;
+  }
+  .massege {
+    font-size: 0.3em;
+  }
+  h2 {
+    font-size: 0.7em;
+  }
+  .fa-solid{
+    font-size: 0.3em;
+  }
+  .header-name{
+    font-size: 0.3em;
+  }
+}
+.profile-image-chat {
+  width: 5vw;
+  height: 5vw;
+  border: 1px solid black;
+  border-radius: 50px;
+}
+.number-massege {
+  border: 1px solid none;
+  background-color: green;
+  color: white;
+  padding: 3px;
+  border-radius: 50px;
+  width: 2vw;
+  height: 2vw;
+  text-align: center;
+}
+.fa-check-double {
+  color: rgba(35, 174, 243, 0.832);
+}
+.massege-box {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  height: 100%;
+}
+header {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  height: 10vw;
+  align-items: center;
+}
+.profile-image-message {
+  width: 5vw;
+  height: 5vw;
+  border-radius: 50px;
+  border: 1px solid black;
+}
+.header-info {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+.header-name {
+  display: flex;
+  flex-direction: column;
+  padding: 10px;
+}
+.header-icons {
+  display: flex;
+  flex-direction: row;
+  gap: 15px;
+  padding: 10px;
+  font-size: 15px;
+}
+.my-messages {
+  border-top: 1px solid green;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;  
+  padding: 10px;
+}
+.massege-1 {
+  background-color: #dcf8c6;
+  border-radius: 10px;
+  width: fit-content;
+  max-width: 60%;
+  font-size: 10px;
+  padding: 10px;
+  align-self: flex-start; 
+}
+.massege-2 {
+  background-color: #87b069; 
+  border-radius: 10px;
+  width: fit-content;
+  font-size: 10px;
+  max-width: 60%;
+  padding: 10px;
+  align-self: flex-end; 
+}
+.write-massege{
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  align-items: center;
+  gap: 10px;
+  justify-content: space-between;
+  padding: 10px;
+}
+.emoji{
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+.chat-writing {
+   width: 80%;
+   padding: 10px;
+   height: 30px;
+   cursor: pointer;
+}
