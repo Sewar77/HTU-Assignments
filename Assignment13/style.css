@@ -1,0 +1,86 @@
+*{
+    margin: 30px;
+}
+
+.div-1 {
+  border: 1px solid black;
+  width: 100px;
+  height: 100px;
+  transform: translate(100px, 300px);
+  background-color: chocolate;
+}
+.div-2 {
+  width: 100px;
+  height: 100px;
+  border: 1px solid black;
+  transform: scale(2, 0.5);
+  background-color: violet;
+}
+.div-3 {
+  width: 100px;
+  height: 100px;
+  border: 1px solid black;
+  transform: rotate(20deg);
+  background-color: chartreuse;
+}
+
+.div-4 {
+  border: 1px solid black;
+  transition: all 2s;
+  width: 100px;
+  background-color: brown;
+  height: 100px;
+}
+.div-4:hover {
+  width: 200px;
+  height: 100px;
+}
+.div-5 {
+  border: 1px solid black;
+  width: 100px;
+  height: 200px;
+  background-color: aquamarine;
+  animation: mymove 3s infinite;
+}
+@keyframes mymove {
+  0% {
+    transform: translate(0px, 0px);
+  }
+  20% {
+    transform: translate(100px, 0px);
+  }
+  40% {
+    transform: translate(100px, 100px);
+  }
+  60% {
+    transform: translate(0px, 100px);
+  }
+  100% {
+    transform: translate(0px, 0px);
+  }
+}
+
+.div-6{
+    color: brown;
+    font-size: 30px;
+}
+
+@media (max-width :500px){
+    .div-6{
+        color: blue;
+    font-size: 10px;
+
+    }
+}
+@media (prefers-color-scheme: light){
+   h1{
+    color: white;
+   }
+}
+
+
+@media (prefers-color-scheme: dark){
+   p{
+    color: white;
+   }
+}
