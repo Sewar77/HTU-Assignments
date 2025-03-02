@@ -1,0 +1,89 @@
+* {
+  padding: 0px;
+  margin: 0px;
+  box-sizing: border-box;
+}
+.container {
+  width: 100%;
+  align-items: center;
+  height: 100%;
+  overflow: auto;
+}
+.icon {
+  text-decoration: none;
+  padding: 15px;
+  font-size: 20px;
+  color: black;
+}
+.account-img {
+  width: 50px;
+  height: 50px;
+  border-radius: 50px;
+  border: 1px solid black;
+}
+.replay{
+    font-size: 10px;
+    color: rgb(29, 155, 240);
+    text-align: center;
+    padding: 20px;
+}
+.border-1 {
+  display: flex;
+  width: 50px !important;
+  flex-direction: column;
+  justify-content: space-between;
+  gap: 20px;
+  text-align: left;
+}
+.header {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  width: 100%;
+}
+.btn-primary {
+  background-color: white !important;
+  color: black !important;
+  border: none !important;
+  width: 50%;
+}
+.active {
+  border-bottom: 2px solid blue !important;
+}
+.input-group-text {
+  background-color: white !important;
+  border: none !important;
+}
+.form-control {
+  border: none !important;
+}
+.post-media {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: end;
+  width: 100%;
+  align-items: baseline;
+  gap: 145px;
+  height: 40px;
+  padding: 5px;
+  border: 1px solid rgba(240, 237, 237, 0.722);
+}
+.fa-location-dot{
+    color: gray;
+}
+.media-icons {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  gap: 20px;
+  font-size: 12px;
+  color: rgb(29, 155, 240);
+}
+.post {
+    font-size: 10px !important;
+  border-radius: 50px !important;
+  border: none !important;
+  background-color:gray !important;
+  color: white !important;
+}
