@@ -1,42 +1,289 @@
-body{
-    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif 
+* {
+  padding: 0px;
+  margin: 0px;
+  box-sizing: border-box;
 }
-.navbar{
-     height: 50px;
-    margin: 20px;
-    padding: 20px;
-    font-weight: bold;
-    text-align: center;
-    background-color: #eabdff;
-    font-size: 35px;
-    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif 
+@import url("https://fonts.googleapis.com/css2?family=Cairo:wght@400;700&family=Tajawal:wght@400;700&family=Amiri:wght@400;700&display=swap");
+
+.navbar {
+  top: 0;
+  left: 0;
+  width: 100%;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  display: flex;
+  z-index: 1000;
+  flex-direction: row;
+  padding: 20px;
+  flex-wrap: wrap;
+  min-height: 10vh;
+  align-items: center;
+  justify-content: space-between;
+  background-color: rgb(10, 51, 10);
 }
-.navbar a{
-    padding: 40px;
-    text-decoration: none;
-    color: #845ec2;
+.menu {
+  display: flex;
+  flex-direction: row;
+  gap: 20px;
+  align-items: center;
+}
+.logo {
+  width: 50px;
+  height: 50px;
+  border-radius: 50px;
+}
+.menu-links a {
+  text-decoration: none;
+  color: beige;
+  padding: 10px;
+  font-size: 14px;
+}
+.pick-trip-button {
+  border-radius: 30px;
+  width: 8vw;
+  height: 3vw;
+  background-color: rgb(50, 75, 50);
+  color: beige;
+  border: none;
+}
+.pick-trip-button:hover {
+  background-color: beige;
+  color: rgb(10, 51, 10);
+}
+.container {
+  position: relative;
+}
+.container video {
+  width: 100%;
+  height: auto;
+}
+.container p {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  display: flex;
+  max-width: 90%;
+  flex-direction: row; /* Stacks buttons vertically on small screens */
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 15px; /* Less gap to fit on mobile */
+  align-items: center;
+}
+.services {
+  width: 23vw;
+  color: rgb(10, 51, 10);
+  height: 5vw;
+  border-radius: 20px;
+  background-color: beige;
+  border: none;
+  font-size: 20px;
+}
+.services:hover {
+  background-color: rgb(10, 51, 10);
+  color: beige;
+}
+@media (max-width: 400px) {
+  .services {
+    font-size: 12px;
+  }
+  .pick-trip-button {
+    width: 15vw;
+    height: 7vw;
+    font-size: 7px;
+  }
+}
+.content {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  flex-wrap: wrap;
+  padding: 30px;
+  gap: 10px;
+  height: fit-content;
+  font-family: "Cairo", "Tajawal", "Amiri", sans-serif;
+  direction: rtl;
+  text-align: right;
+}
+.content-1 {
+  flex: 3;
+  font-size: 25px;
+  flex-basis: 200px;
+  padding: 20px;
+  width: 65%;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+.content-1 h1 {
+  font-family: "Courier New", Courier, monospace;
+  font-weight: 800;
 }
 
-.container{
-    display: flex;
-    justify-content: center;
-    flex-wrap:nowrap ;
+.content-1 h2 {
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  font-weight: 800;
 }
-#home{
-    text-align: center;
+.content-1 p {
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
 }
-.bio{
-    font-size: 15px;
-    padding-left: 30px;
-    width: 50%;
+.content-2 {
+  flex: 1;
+  flex-basis: 200px;
+  padding: 20px;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  font-weight: 800;
+
+  background-color: rgb(214, 214, 196);
+  width: 50%;
+}
+.content-2 h1 {
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+.events-button {
+  height: 6vw;
+  font-weight: bolder;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  background-color: rgb(10, 51, 10);
+  color: beige;
+}
+.gallery-section {
+  text-align: center;
+  font-size: 25px;
 }
 
-.bio img{
-    border: 1px solid #845ec2;
-    width: 100%;
-     height: 100%;
+.gallery {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  gap: 20px;
+  width: 100%;
+  justify-self: center;
+  align-items: center;
+  height: fit-content;
+  padding: 20px;
+  font-size: 30px;
+  font-weight: bolder;
 }
 
+.image-container {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 400px;
+  height: 400px;
+  justify-content: center;
+  text-align: center;
+}
 
+.img-gallery {
+  flex: 1;
+  flex-basis: 150px;
+  width: 350px;
+  height: 350px;
+  object-fit: cover;
+}
 
+.image-container p {
+  margin-top: 10px;
+  font-size: 18px;
+  color: #333;
+  width: 80%;
+  text-align: center;
+}
 
+footer {
+  width: 100%;
+  background-color: #1a2a1a;
+  color: white;
+  padding: 40px 0;
+  font-family: Arial, sans-serif;
+}
+
+.footer-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 80%;
+  margin: 0 auto;
+  flex-wrap: wrap;
+}
+a {
+  color: beige;
+  text-decoration: none;
+}
+
+a:hover {
+  color: rgb(80, 108, 55);
+}
+.footer-links a {
+  margin: 0 20px;
+  color: white;
+  text-align: right;
+  text-decoration: none;
+  font-size: 16px;
+}
+
+.footer-links a:hover {
+  color: #ffd700;
+  transition: 0.3s;
+}
+
+.footer-logo img {
+  width: 150px;
+  height: auto;
+}
+
+.footer-social-media a {
+  margin: 0 15px;
+  color: white;
+}
+
+.footer-social-media img {
+  width: 35px;
+  height: 35px;
+}
+
+.footer-info {
+  text-align: center;
+  margin-top: 20px;
+  font-size: 14px;
+}
+
+.p-container {
+  color: white;
+  font-size: 40px;
+  text-align: center;
+}
+
+.golf-section {
+  width: 100%;
+}
+
+.golf-prices {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
+}
+
+.golf-image {
+  flex: 1;
+  max-width: 45%;
+}
+
+.golf-image img {
+  width: 100%;
+  height: 300px;
+  border-radius: 10px;
+}
+
+.golf-details {
+  flex: 1;
+  max-width: 45%;
+  text-align: right;
+  direction: rtl;
+}
