@@ -66,77 +66,92 @@ header {
 .live:hover {
   background-color: brown;
 }
-
 .background-main {
   position: relative;
 }
 
-.img-details {
-  width: 60%;
-  max-width: 50%;
-  position: absolute;
-  top: 10%;
-  left: 3%;
-  color: white;
-}
 .img {
   width: 100%;
+  height: auto;
+  display: block;
 }
+
+.img-details {
+  position: absolute;
+  top: 10%;
+  left: 5%;
+  width: 55%;
+  color: white;
+}
+
 .img-details h1 {
-  font-size: 60px;
-}
-.btn {
-  font-size: 30px;
-  width: 100%;
-}
-@media (max-width: 767px) {
-  header {
-    font-size: 10px;
-  }
-  .img-details h1,
-  .img-details p {
-    font-size: 2.2rem;
-  }
-  .img-details p {
-    font-size: 0.5rem;
-  }
-  .img-details {
-    top: 5%;
-  }
-  .img-details .btn {
-    font-size: 0.8rem;
-    padding: 5px 10px;
-    width: 100%;
-  }
+  font-size: 4vw;  
 }
 
-@media (max-width: 400px) {
-  .img-details h1,
-  .img-details p {
-    font-size: 2rem;
-  }
-  .img-details p {
-    font-size: 0.5rem;
-  }
-  .img-details {
-    top: 0%;
-  }
-  .img-details {
-    width: 100%;
-  }
-  .img-details .btn {
-    font-size: 0.5rem;
-    padding: 2px 5px;
-    width: 100%;
-  }
-  .card-title {
-    font-size: 0.9rem;
-  }
-
-  .card-text {
-    font-size: 0.8rem;
-  }
+.img-details p {
+  font-size: 1.5vw;  
 }
+
+  @media (min-width: 1024px) {
+    .img-details {
+      top: 15%;
+      width: 70%;
+    }
+  
+    .img-details h1 {
+      font-size: 2.5rem;
+    }
+  
+    .img-details p {
+      font-size: 1rem;
+    }
+  
+    .btn {
+      font-size: 0.9rem;
+      padding: 6px 12px;
+    }
+  }
+  
+  @media (max-width: 767px) {
+    .img-details {
+      top: 5%;
+      left: 5%;
+      width: 90%;
+      text-align: center;
+    }
+  
+    .img-details h1 {
+      font-size: 2rem;
+    }
+  
+    .img-details p {
+      font-size: 0.9rem;
+    }
+  
+    .btn {
+      font-size: 0.8rem;
+      padding: 5px 10px;
+      width: 100%;
+    }
+  }
+  
+  @media (max-width: 400px) {
+    .img-details h1 {
+      font-size: 1.8rem;
+    }
+  
+    .img-details p {
+      font-size: 0.7rem;
+    }
+  
+    .btn {
+      font-size: 0.7rem;
+      padding: 5px 8px;
+    }
+  }
+  
+
+
 .address {
   display: flex;
   justify-content: space-between;
@@ -172,7 +187,7 @@ header {
 }
 
 .card-text span {
-    font-size: 10px;
+  font-size: 10px;
 }
 .card-img {
   object-fit: cover;
@@ -184,4 +199,10 @@ header {
 }
 .margin {
   margin-top: 10px;
+}
+.row{
+    padding: 2%;
+}
+.card{
+    margin: 5%;
 }
