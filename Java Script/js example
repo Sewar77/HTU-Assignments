@@ -1,0 +1,164 @@
+/*
+1. Strings
+How do you declare a string in JavaScript? Provide an example.
+Let string = “sewar”;
+What will be the output of the following code?
+let firstName = "John";
+let lastName = "Doe";
+console.log(firstName + " " + lastName);
+John Doe
+How can you find the length of a string in JavaScript?
+console.log(lastName.length)
+
+2. Booleans
+What are the two possible boolean values in JavaScript? 
+true, false 
+Predict the output of the following:
+let x = 10 > 5;
+console.log(x);
+ true
+How do you check if a variable is true in an if-statement?
+If (x):
+
+
+3. Objects
+How do you create an object in JavaScript?
+Let obj = {
+Value: 1,
+Value: 2,
+};
+Given the following object:
+let person = {
+  name: "Ali",
+  age: 25,
+  country: "Jordan",
+};
+How would you access the age property?
+Person[“age”]
+What will be the output of the following code?
+let user = {
+  name: "Sara",
+  age: 22,
+  job: "Engineer",
+};
+console.log(user["job"]);
+Engineer
+4. Array Objects
+How do you declare an array in JavaScript?
+Let myarray = [“value1”, “value2”, “value3”]
+
+What will be the output of this code?
+let fruits = ["apple", "banana", "cherry"];
+console.log(fruits[1]);
+banana
+How can you add an item to the end of an array?
+Fruits.add(“orange”);
+
+5. Date Objects
+How do you create a new Date object in JavaScript?
+Let d = new date();
+
+How do you get the current day of the week from a Date object?
+d.getDate();
+
+
+
+
+6. Functions
+What will be the output of the following function call?
+function multiply(x, y) {
+  return x * y;
+}
+console.log(multiply(4, 5));
+20
+
+How do you define a function that converts Fahrenheit to Celsius?
+Function convert(f){
+Let c = (f- 32)/ (9/5);
+Return c;
+}
+7. Objects with Methods
+How do you define a method inside a JavaScript object?
+Let obj = {
+Value: 1,
+Value: 2,
+Mymethod: function(){
+Return value1 + “ “ + value2;
+}
+};
+
+What will be the output of the following code?
+let car = {
+  brand: "Toyota",
+  model: "Corolla",
+  getDetails: function () {
+    return this.brand + " " + this.model;
+  },
+};
+console.log(car.getDetails());
+Toyota corolla 
+
+How can you add a new method to an existing object?
+----
+
+8. Looping through Objects
+How can you loop through an object’s properties?
+What will be printed by the following loop?
+let person = {
+  name: "Hussam",
+  age: 30,
+  city: "Amman",
+};
+
+for (let key in person) {
+  console.log(key + ": " + person[key]);
+}
+  name: Hussam
+  age: 30
+  city: Amman
+
+9. Conditional Statements
+What is the difference between if and else if?
+if is the first condition the console check and compare, the else if is the second and so on conditions to check in case the main condition was false, and if else could be redundance 
+
+Identify the issue in the following code:
+let age = 25;
+if (age > 30) {
+  console.log("Older than 30");
+} else if ((age = 30)) {
+  console.log("Exactly 30");
+} else {
+  console.log("Younger than 30");
+}
+The mistake is in the first if else, the (=) used, it should be === to compare the value and the date type
+Correct the mistake in the above code.
+let age = 25;
+if (age > 30) {
+  console.log("Older than 30");
+} else if ((age === 30)) {
+  console.log("Exactly 30");
+} else {
+  console.log("Younger than 30");
+}
+10. Switch Statements
+What will be the output of this switch statement if today is Monday?
+let day;
+switch (new Date().getDay()) {
+  case 0:
+    day = "Sunday";
+    break;
+  case 1:
+    day = "Monday";
+    break;
+  default:
+    day = "Invalid day";
+}
+console.log(day);
+Monday
+
+How does the break statement work in a switch case?
+It pass the console to the next case statement 
+What happens if you forget to include a break statement in a switch case?
+When the console find the first true condition as an output, it would run any case after the true one even though it/they were false. 
+
+*/

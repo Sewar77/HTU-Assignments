@@ -194,7 +194,10 @@ header {
   display: flex;
   justify-content: space-between;
   flex-direction: column;
+  font-weight: bold;
+
 }
+
 .img-overlay {
   flex-direction: column;
   display: flex;
@@ -202,10 +205,6 @@ header {
 }
 .title {
   font-size: 1rem;
-}
-
-.text {
-  font-weight: bold;
 }
 
 .text span {
