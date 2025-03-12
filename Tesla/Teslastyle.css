@@ -1,0 +1,57 @@
+* {
+  padding: 0px;
+  margin: 0px;
+  box-sizing: border-box;
+}
+.move-bar {
+  background-color: black;
+  color: white;
+}
+header {
+  width: 100%;
+  padding-left: 50px;
+  padding-right: 50px;
+  padding-top: 5px;
+ 
+}
+.contact-info {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  padding: 10px;
+  gap: 20px;
+}
+.country {
+  background-color: white !important;
+  color: black !important;
+}
+.contact-info input {
+  width: 250px;
+  height: fit-content;
+  padding: 5px;
+  border: 1px solid black;
+  border-radius: 5px;
+}
+.test-logo {
+  height: 30px;
+  width: 200px;
+}
+.icons-head {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  gap: 20px;
+  font-size: 22px;
+}
+.header-menu{
+    padding-left: 70px;
+    padding-right: 70px;
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+    flex-wrap: wrap;
+    align-items: center;
+    text-align: center;
+}
