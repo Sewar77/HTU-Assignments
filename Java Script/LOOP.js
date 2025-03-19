@@ -35,7 +35,7 @@ function calculate(event) {
       document.getElementById("user-output").innerHTML = devided_number;
       break;
     case "Exponentiation":
-      devided_number = Math.pow(input_number, secon_input); 
+      devided_number = Math.pow(input_number, secon_input);
       document.getElementById("user-output").innerHTML = devided_number;
       break;
     default:
