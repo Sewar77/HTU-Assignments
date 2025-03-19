@@ -3,6 +3,9 @@
   margin: 0px;
   box-sizing: border-box;
 }
+body{
+  overflow-x: hidden;
+}
 header {
   background-color: black;
   padding: 10px;
@@ -130,7 +133,7 @@ header {
     text-align: left;
   }
   .img-details h1,
-  m .img-details2 h1 {
+   .img-details2 h1 {
     font-size: 2rem;
   }
 
@@ -266,6 +269,7 @@ header {
 .planet-img {
   height: 500px;
   padding: 10px;
+  object-fit: cover;
   margin-top: 10px;
   cursor: pointer;
 }
