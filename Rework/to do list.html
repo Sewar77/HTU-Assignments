@@ -5,7 +5,6 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>To Do List</title>
     <link rel="stylesheet" href="to do list.css" />
-    <script src="to do list.js"></script>
     <link
       href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
       rel="stylesheet"
@@ -13,73 +12,54 @@
       crossorigin="anonymous"
     />
   </head>
-  <body>
-    <div>
-      <nav class="navbar navbar-expand-lg bg-body-tertiary">
-        <div class="container-fluid">
-          <a class="navbar-brand" href="#">Navbar scroll</a>
-          <button
-            class="navbar-toggler"
-            type="button"
-            data-bs-toggle="collapse"
-            data-bs-target="#navbarScroll"
-            aria-controls="navbarScroll"
-            aria-expanded="false"
-            aria-label="Toggle navigation"
-          >
-            <span class="navbar-toggler-icon"></span>
-          </button>
-          <div class="collapse navbar-collapse" id="navbarScroll">
+  <body class="font-monospace d-flex justify-content-center align-items-center">
+    <main class="container text-center m-3 p-3 bg-white rounded shadow">
+      <h1 class="text-center">To Do List</h1>
+      <div class="input-group mb-3">
+        <input
+          id="added-task"
+          type="text"
+          class="form-control"
+          placeholder="Write the Task: "
+          aria-label="Recipient's username"
+          aria-describedby="button-addon2"
+        />
+        <button
+          class="btn btn-outline-secondary"
+          type="button"
+          id="add-task-btn"
+        >
+          Add
+        </button>
+      </div>
+      <div class="container-fluid">
+        <div class="row justify-content-center g-3 m-3 p-2">
+          <div class="col-12 col-md-6 col-lg-6 border border-primary p-2">
+            <p class="fs-3">Completed Tasks</p>
+            <hr />
             <ul
-              class="navbar-nav me-auto my-2 my-lg-0 navbar-nav-scroll"
-              style="--bs-scroll-height: 100px"
+              id="completed-tasks-list"
+              class="text-start text-decoration-line-through"
             >
-              <li class="nav-item">
-                <a class="nav-link active" aria-current="page" href="#">Home</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="#">Link</a>
-              </li>
-              <li class="nav-item dropdown">
-                <a
-                  class="nav-link dropdown-toggle"
-                  href="#"
-                  role="button"
-                  data-bs-toggle="dropdown"
-                  aria-expanded="false"
-                >
-                  Link
-                </a>
-                <ul class="dropdown-menu">
-                  <li><a class="dropdown-item" href="#">Action</a></li>
-                  <li><a class="dropdown-item" href="#">Another action</a></li>
-                  <li><hr class="dropdown-divider" /></li>
-                  <li>
-                    <a class="dropdown-item" href="#">Something else here</a>
-                  </li>
-                </ul>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link disabled" aria-disabled="true">Link</a>
-              </li>
+              <li>task1</li>
+              <li>task2</li>
+              <li>task3</li>
+              <li>task4</li>
+              <li>task5</li>
             </ul>
-            <form class="d-flex" role="search">
-              <input
-                class="form-control me-2"
-                type="search"
-                placeholder="Search"
-                aria-label="Search"
-              />
-              <button class="btn btn-outline-success" type="submit">
-                Search
-              </button>
-            </form>
+            <button id="delete-task-btn">Delete Tasks</button>
+          </div>
+          <div class="col-12 col-md-6 col-lg-6 border border-primary p-2">
+            <p class="fs-3">Uncompleted Tasks</p>
+            <hr />
+            <ul id="uncompleted-tasks-list" class="text-start">
+              
+            </ul>
+            <button id="complete-task-btn">mark as completed Tasks</button>
           </div>
         </div>
-      </nav>
-    </div>
-    <main class="d-flex p-2">
-      
+      </div>
     </main>
+    <script src="to do list.js"></script>
   </body>
 </html>
