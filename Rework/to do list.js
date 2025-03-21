@@ -22,7 +22,6 @@ deleteTasksButton.onclick = function () {
   tasks = tasks.filter((task) => !task.completed);
 };
 
-
 let completeTaskBtn = document.getElementById("complete-task-btn");
 
 completeTaskBtn.onclick = function () {
