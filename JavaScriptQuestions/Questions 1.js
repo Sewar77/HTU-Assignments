@@ -1,7 +1,7 @@
 // [1,1] [1,2] [1,3]
 // [2,1] [2,2] [2,3]
 // [3,1] [3,2] [3,3]
-
+/*
 for (let number1 = 1; number1 <= 3; number1++) {
   for (let number2 = 1; number2 <= 3; number2++) {
     //   console.log("[" + number1 + "," + number2 + "]");
@@ -74,3 +74,55 @@ console.log(newarr);
 
 let double = newarr.map((x) => x * 2);
 console.log(double);
+
+
+console.log(newarr.filter((x) => x >= 55));
+console.log(newarr.reduce((pre, curr) => pre * curr));
+console.log(newarr.reduce((pre, curr) => pre + curr));
+console.log(newarr.reduce((pre, curr) => pre - curr));
+console.log(newarr.reduce((pre, curr) => pre / curr));
+console.log(newarr.reduce((pre, curr) => pre ** curr));
+
+
+newarr.forEach((x,y) => {
+  if (x > 22){
+    console.log(`the number ${x} with index ${y}`)
+  }
+})
+
+let found = newarr.find(x => x > 23);
+console.log(found);
+
+
+let foundIndex = newarr.findIndex(x => x > 23);
+console.log(foundIndex);
+
+let everyElement = newarr.every(x => x > 22);
+console.log(everyElement);
+
+
+let someElement = newarr.some(x => x > 22);
+console.log(someElement);
+
+let flatarr = [1,2,[2,3,4,5], [2,[3,4,3, [3,4,5]]]]
+console.log(flatarr.flat(2));
+*/
+
+console.log("question-1: using map, multiply the elements with 3: ");
+let mapExample = [1, 2, 3, 4, 5, 6];
+console.log(mapExample.map((x) => x * 3));
+
+console.log("question-2: using filter and index of, return a unique array:  ");
+let filterExample = [1, 2, 2, 3, 3, 4, 5, 6];
+console.log(
+  filterExample.filter((value, index, array) => array.indexOf(value) === index)
+);
+
+console.log("question-3: sort by age  ");
+let sortObj = [
+  { name: "sewar", age: 222 },
+  { name: "hala", age: 23 },
+  { name: "raghad", age: 924 },
+];
+sortObj.sort((p1, p2) => p1.age - p2.age);
+console.log(sortObj);
