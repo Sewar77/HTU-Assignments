@@ -38,27 +38,21 @@
 
     <hr />
     <form action="" class="fs-3 row container border rounded shadow p-3 m-2">
-      <label for="inputArray">Enter Numbers (0 to stop): </label>
+      <label for="inputArray">Enter Numbers (comma-separated): </label>
       <input
-        type="number"
+        type="text"
         class="form-control"
         id="inputArray"
-        placeholder="Enter Your Numbers"
+        placeholder="Example: 1,4,7,10"
       />
       <button
         type="button"
-        onclick="CheckOddEven()"
+        onclick="oddEvenNumbers()"
         class="btn btn-primary w-auto m-3"
       >
-        Add
+        Check
       </button>
-      <p>
-        The Array :
-        <span id="outputArray"></span>
-        <br />
-        The Result:
-        <span id="Result"></span>
-      </p>
+      <p>The Result: <span id="Result"></span></p>
     </form>
 
     <script src="js-exams 2.js"></script>
