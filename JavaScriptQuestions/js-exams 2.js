@@ -66,16 +66,46 @@ Output: "JavaScript"
 
 function lognestWord() {
   let inputSentence = document.getElementById("inputSentence").value.split(" ");
-  let maxLength = 0;
-  for (let word = 0; word < inputSentence.length;) {
-    //["Hello", "world", "this", "is", "JavaScript"]
-    maxLength = inputSentence[word].length; //hello
-    if (inputSentence[word].length > maxLength){
-      maxLength = inputSentence[word].length ;
-      word++;
+  let maxWord = "";
+  for (let word of inputSentence) {
+    if (word.length > maxWord.length) {
+      maxWord = word;
+    }
+  }
+  document.getElementById("resultWord").innerHTML = maxWord;
+}
+
+/*
+FizzBuzz Problem
+Print numbers from 1 to 50. For multiples of 3 print "Fizz", 
+for multiples of 5, print "Buzz", 
+and for multiples of both, print "FizzBuzz".
+*/
+
+function FizzBuzz() {
+  for (let number = 1; number <= 50; number++) {
+    if (number % 5 == 0 && number % 3 == 0) {
+      document.getElementById("multiplesOf3").innerHTML += `<br>${number} Fizz`;
+    } else if (number % 5 == 0) {
+      document.getElementById("multiplesOf5").innerHTML += `<br>${number} Buzz` ;
+    } else if (number % 3 == 0) {
+      document.getElementById("multiplesOfBoth").innerHTML += `<br>${number} FizzBuzz `;
     }
     else{
-      return inputSentence[word];
+      document.getElementById("multiplesOfNone").innerHTML += `<br> ${number} None `;
     }
   }
 }
+
+
+/*
+Find the Second Largest Number in an Array
+Write a function to find the second largest number in a given numeric array.
+
+Example:
+Input: [10, 5, 20, 8, 12]
+Output: 12
+
+*/
+
+

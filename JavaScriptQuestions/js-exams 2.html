@@ -54,6 +54,62 @@
       </button>
       <p>The Result: <span id="Result"></span></p>
     </form>
+    <hr />
+    <hr />
+    <form action="" class="fs-3 row container border rounded shadow p-3 m-2">
+      <label for="inputSentence">Enter Your Sentence: </label>
+      <input
+        type="text"
+        class="form-control"
+        id="inputSentence"
+        placeholder="Example: I Love Programming "
+      />
+      <button
+        type="button"
+        onclick="lognestWord()"
+        class="btn btn-primary w-auto m-3"
+      >
+        Check
+      </button>
+      <p>The Result: <span id="resultWord"></span></p>
+    </form>
+
+    <form action="" class="fs-3 row container border rounded shadow p-3 m-2">
+      <label for="inputSentence">Press To Play FizzBuzz </label>
+
+      <button
+        type="button"
+        onclick="FizzBuzz()"
+        class="btn btn-primary w-auto m-3"
+      >
+        FizzBuzz
+      </button>
+      <p>
+        The Result: multiples of 3: <span id="multiplesOf3"></span><br />
+        multiples of 5: <span id="multiplesOf5"></span><br />
+        multiples of Both: <span id="multiplesOfBoth"></span><br />
+        multiples of None of 3 and 5: <span id="multiplesOfNone"></span><br />
+      </p>
+    </form>
+    <hr />
+    <form action="" class="fs-3 row container border rounded shadow p-3 m-2">
+      <label for="inputArray">Enter Numbers (comma-separated): </label>
+      <input
+        type="text"
+        class="form-control"
+        id="inputArray"
+        placeholder="Example: 1,4,7,10"
+      />
+      <button
+        type="button"
+        onclick="oddEvenNumbers()"
+        class="btn btn-primary w-auto m-3"
+      >
+        Check
+      </button>
+      <p>The Result: <span id="Result"></span></p>
+    </form>
+    <hr />
 
     <script src="js-exams 2.js"></script>
   </body>
