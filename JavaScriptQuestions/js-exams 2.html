@@ -92,22 +92,43 @@
       </p>
     </form>
     <hr />
+
     <form action="" class="fs-3 row container border rounded shadow p-3 m-2">
-      <label for="inputArray">Enter Numbers (comma-separated): </label>
+      <label for="theInputArray">Enter Numbers (comma-separated): </label>
       <input
         type="text"
         class="form-control"
-        id="inputArray"
+        id="theInputArray"
         placeholder="Example: 1,4,7,10"
       />
       <button
         type="button"
-        onclick="oddEvenNumbers()"
+        onclick="secondLargestNumbers()"
         class="btn btn-primary w-auto m-3"
       >
         Check
       </button>
-      <p>The Result: <span id="Result"></span></p>
+      <p>The Result: <span id="ResultSecondNumber"></span></p>
+      <p>The sorted array: <span id="ResultSorted"></span></p>
+    </form>
+    <hr />
+
+    <form action="" class="fs-3 row container border rounded shadow p-3 m-2">
+      <label for="userArray">Enter Numbers (comma-separated): </label>
+      <input
+        type="text"
+        class="form-control"
+        id="userArray"
+        placeholder="Example: 1,4,7,10"
+      />
+      <button
+        type="button"
+        onclick="flattenArray()"
+        class="btn btn-primary w-auto m-3"
+      >
+        Flat the Array
+      </button>
+      <p>The Result: <span id="flattenArrayResult"></span></p>
     </form>
     <hr />
 
