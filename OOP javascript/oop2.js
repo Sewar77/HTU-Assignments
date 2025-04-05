@@ -147,3 +147,40 @@ for (let key in person) {
 console.log("==========================");
 
 Object.keys(person).forEach((key) => console.log(key));
+console.log(Object.keys(person));
+
+console.log("==========================");
+console.log(Object.entries(person));
+
+console.log("==========================");
+Object.freeze(student3);
+
+student3.age = 90;
+console.log(student3);
+console.log("==========================");
+
+delete student3.age;
+console.log(student3);
+
+console.log("==========================");
+
+Object.seal(student2); //seal allow edit but not delete 
+
+
+student2.age = 90;
+console.log(student2);
+console.log("==========================");
+
+delete student2.age;
+console.log(student2);
+
+
+
+
+
+
+
+
+
+
+
