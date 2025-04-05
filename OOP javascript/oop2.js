@@ -117,12 +117,12 @@ let htuStudent = {
 };
 
 person.print = function () {
-  return `${this.name} ${this.age} ${this.address.country} ${this.inst} ${this.major} ${this.progLang}`;
+  return `name: ${this.name} age: ${this.age} country: ${this.address.country} `;
 };
 
 let student = { ...person, ...htuStudent };
 student.printInfo = function () {
-  return `${this.name} ${this.age} ${this.address.country} ${this.inst} ${this.major} ${this.progLang}`;
+  return `name: ${this.name} age: ${this.age} country: ${this.address.country} inst: ${this.inst} major: ${this.major} language: ${this.progLang}`;
 };
 console.log(student.printInfo());
 console.log(person.print());
@@ -131,3 +131,19 @@ student.address.country = "cairo";
 
 console.log(student.printInfo());
 console.log(person.print());
+console.log("==========================");
+
+let student2 = JSON.parse(JSON.stringify(person));
+let student4 = JSON.parse(JSON.stringify(person.address));
+let student3 = JSON.stringify(person);
+console.log(student2);
+console.log(student3);
+console.log(student4);
+console.log("==========================");
+
+for (let key in person) {
+  console.log(key + " " + person[key]);
+}
+console.log("==========================");
+
+Object.keys(person).forEach((key) => console.log(key));
