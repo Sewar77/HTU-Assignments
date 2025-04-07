@@ -1,10 +1,7 @@
 const data = [
   { name: "sewar", age: 23, email: "SEWar@gmail.com" },
   { name: "sewar", age: 23, email: "SEWar@gmail.com" },
-  { name: "sewar", age: 23, email: "SEWar@gmail.com" },
-  { name: "sewar", age: 23, email: "SEWar@gmail.com" },
-  { name: "sewar", age: 23, email: "SEWar@gmail.com" },
-  { name: "sewar", age: 23, email: "SEWar@gmail.com" },
+ 
 ];
 
 let userList = [];

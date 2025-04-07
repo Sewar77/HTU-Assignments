@@ -12,23 +12,35 @@
         <input type="email" id="email">
 
     </form>
-    <table id="table">
-        <button type="button" onclick="addRow()">Add Row</button>
-      <thead>
-        <tr>
-          <th>name</th>
-          <th>age</th>
-          <th>email</th>
-        </tr>
-      </thead>
-      <tbody></tbody>
-    </table>
-
-
-
-
-
-
+    <div class="container">
+      <table
+        id="table"
+        class="table table-striped-columns border border-2 text-center m-2 p-3 border-dark rounded"
+      >
+        <button
+          class="btn btn-warning p-3 m-2"
+          type="button"
+          onclick="addUser()"
+        >
+          Add user
+        </button>
+        <button
+        class="btn btn-warning p-3 m-2"
+        type="button"
+        onclick="addRow()"
+      >
+        Add Row
+      </button>
+        <thead>
+          <tr>
+            <th>name</th>
+            <th>age</th>
+            <th>email</th>
+          </tr>
+        </thead>
+        <tbody></tbody>
+      </table>
+    </div>
     <!--<script src="oop.js"></script>
     <script src="oop2.js"></script>-->
     <script src="createTable.js"></script>
