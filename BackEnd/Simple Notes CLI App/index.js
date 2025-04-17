@@ -1,19 +1,3 @@
-/*
-Simple Notes CLI App
-
-Goal:
-Let the user enter a title and content for a note. Save each note in a JSON file.
-Ask if the user wants to add another one.
-
-Skills Practiced:
-
-inquirer for title and content
-
-Use fs to read/write JSON
-
-Learn how to append without erasing data
-*/
-
 import inquirer from "inquirer";
 import fs, { existsSync } from "fs";
 
@@ -38,7 +22,6 @@ class Note {
         } else {
           if (existsSync("./Notes.json")) {
             console.log("Saved");
-            // fs.appendFileSync("./Notes.json", "Title: " + title);
           }
           console.log("Note Created.");
           inquirer
@@ -205,11 +188,11 @@ class Note {
         {
           message:
             "Welcome in NotesApp, Please Choose the operation You want:\n\
-                A for Add New Note,\n \
-                V for View the Notes,\n \
-                D for Delete Note, \n\
-                E for Edit Note,   \n \
-                O for Exit App.     \n ",
+A for Add New Note,\n \
+V for View the Notes,\n \
+D for Delete Note, \n\
+E for Edit Note,   \n \
+O for Exit App.     \n ",
           name: "note",
         },
       ])
@@ -232,7 +215,7 @@ class Note {
           case "O":
             process.exit();
           default:
-            console.log("Seems Wring Input, Please reinput again.");
+            console.log("Seems Wrong Input, Please reinput again.");
             this.noteApp();
         }
       });
