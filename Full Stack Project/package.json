@@ -9,6 +9,9 @@
   "license": "ISC",
   "description": "",
   "dependencies": {
-    "inquire": "^0.4.8"
+    "body-parser": "^2.2.0",
+    "express": "^5.1.0",
+    "inquire": "^0.4.8",
+    "nodemon": "^3.1.9"
   }
 }
